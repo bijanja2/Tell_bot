@@ -1,7 +1,8 @@
 from telegram.ext import Updater, CommandHandler
 
 # اینجا توکن رباتت رو بذار
-TOKEN = "BOT_TOKEN"
+import os
+TOKEN = os.getenv("BOT_TOKEN")
 
 # دستور شروع
 def start(update, context):
